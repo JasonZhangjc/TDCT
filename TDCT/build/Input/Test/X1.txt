@@ -1,0 +1,8 @@
+X1
+xor 3 3
+A simple 1 1 
+B sync
+C simple 0 0 
+1 2 A alpha 1 B10 B20
+2 1 B11 B21 beta 0 C
+1 1 C alpha 1 A
