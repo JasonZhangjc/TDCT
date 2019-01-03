@@ -1,0 +1,4 @@
+X0
+sync 2 0
+X1 xor
+X2 xor

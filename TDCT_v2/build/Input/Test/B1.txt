@@ -1,0 +1,5 @@
+B1
+xor 2 1
+B10 simple 1 0
+B11 simple 0 0
+1 1 B10 mu 0 B11

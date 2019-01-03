@@ -1,0 +1,150 @@
+Welcome to BDD-based Tree-DES Computation Tool Version 1
+Input fileInput/Test/X0.txt opened!
+Reading components of Input/Test/X0.txt!
+Input fileInput/Test/X1.txt opened!
+Reading components of Input/Test/X1.txt!
+Input fileInput/Test/B.txt opened!
+Reading components of Input/Test/B.txt!
+Input fileInput/Test/B1.txt opened!
+Reading components of Input/Test/B1.txt!
+Components of Input/Test/B1.txt read!
+Reading transitions of B1!
+Transitions of B1 read!
+Input fileInput/Test/B1.txtread!
+Input fileInput/Test/B2.txt opened!
+Reading components of Input/Test/B2.txt!
+Components of Input/Test/B2.txt read!
+Reading transitions of B2!
+Transitions of B2 read!
+Input fileInput/Test/B2.txtread!
+Components of Input/Test/B.txt read!
+Input fileInput/Test/B.txtread!
+Components of Input/Test/X1.txt read!
+Reading transitions of X1!
+Transitions of X1 read!
+Input fileInput/Test/X1.txtread!
+Input fileInput/Test/X2.txt opened!
+Reading components of Input/Test/X2.txt!
+Components of Input/Test/X2.txt read!
+Reading transitions of X2!
+Transitions of X2 read!
+Input fileInput/Test/X2.txtread!
+Components of Input/Test/X0.txt read!
+Input fileInput/Test/X0.txtread!
+B1
+Components are: 
+0:B10(i) 1:B11 
+Events are: 
+mu(unc) 
+Transitions are: 
+from: (B10,) via: mu(unc) to: (B11,)
+--------**------------
+B2
+Components are: 
+0:B20(i) 1:B21 
+Events are: 
+lambda(con) 
+Transitions are: 
+from: (B20,) via: lambda(con) to: (B21,)
+--------**------------
+B
+Components are: 
+0:B1 1:B2 
+--------**------------
+X1
+Components are: 
+0:A*(i) 1:B 2:C 
+Events are: 
+alpha(con) beta(unc) 
+Transitions are: 
+from: (B21,B11,) via: beta(unc) to: (C,)
+from: (A,) via: alpha(con) to: (B10,B20,)
+from: (C,) via: alpha(con) to: (A,)
+--------**------------
+X2
+Components are: 
+0:D*(i) 1:E 
+Events are: 
+beta(unc) sigma(con) tau(con) 
+Transitions are: 
+from: (E,) via: tau(con) to: (D,)
+from: (E,) via: sigma(con) to: (D,)
+from: (D,) via: beta(unc) to: (E,)
+--------**------------
+X0
+Components are: 
+0:X1 1:X2 
+--------**------------
+Open loop simulation: 
+0:<X1:0, X2:0>*
+0-Via: alpha
+1:<X1:1, B1:0, B2:0, X2:0>
+1-Via: mu
+2:<X1:1, B1:1, B2:0, X2:0>
+2-Via: lambda
+3:<X1:1, B1:1, B2:1, X2:0>
+3-Via: beta
+4:<X1:2, X2:1>
+4-Via: sigma
+5:<X1:2, X2:0>
+5-Via: alpha
+0:<X1:0, X2:0>
+4-Via: tau
+5:<X1:2, X2:0>
+4-Via: alpha
+6:<X1:0, X2:1>
+6-Via: sigma
+0:<X1:0, X2:0>
+6-Via: tau
+0:<X1:0, X2:0>
+6-Via: alpha
+7:<X1:1, B1:0, B2:0, X2:1>
+7-Via: sigma
+1:<X1:1, B1:0, B2:0, X2:0>
+7-Via: mu
+8:<X1:1, B1:1, B2:0, X2:1>
+8-Via: sigma
+2:<X1:1, B1:1, B2:0, X2:0>
+8-Via: tau
+2:<X1:1, B1:1, B2:0, X2:0>
+8-Via: lambda
+9:<X1:1, B1:1, B2:1, X2:1>
+9-Via: sigma
+3:<X1:1, B1:1, B2:1, X2:0>
+9-Via: tau
+3:<X1:1, B1:1, B2:1, X2:0>
+7-Via: tau
+1:<X1:1, B1:0, B2:0, X2:0>
+7-Via: lambda
+10:<X1:1, B1:0, B2:1, X2:1>
+10-Via: sigma
+11:<X1:1, B1:0, B2:1, X2:0>
+11-Via: mu
+3:<X1:1, B1:1, B2:1, X2:0>
+10-Via: mu
+9:<X1:1, B1:1, B2:1, X2:1>
+10-Via: tau
+11:<X1:1, B1:0, B2:1, X2:0>
+1-Via: lambda
+11:<X1:1, B1:0, B2:1, X2:0>
+States: 12, Transitions: 25
+Closed loop simulation: 
+0:<X1:0, X2:0>*
+0-Via: alpha
+1:<X1:1, B1:0, B2:0, X2:0>
+1-Via: mu
+2:<X1:1, B1:1, B2:0, X2:0>
+2-Via: lambda
+3:<X1:1, B1:1, B2:1, X2:0>
+3-Via: beta
+4:<X1:2, X2:1>
+4-Via: sigma
+5:<X1:2, X2:0>
+5-Via: alpha
+0: <X1:0, X2:0>
+1-Via: lambda
+6:<X1:1, B1:0, B2:1, X2:0>
+6-Via: mu
+3: <X1:1, B1:1, B2:1, X2:0>
+States: 7, Transitions: 8
+:::::::::::::
