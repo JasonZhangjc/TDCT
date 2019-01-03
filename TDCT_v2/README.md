@@ -1,7 +1,10 @@
 # TDCT: TREE_DES_COMPUTATION_TOOL
-This is a demo of TreeDES software version 1.0. This is an educational 
+This is a demo of TreeDES software version 2.0. This is an educational 
 computation tool for efficient state-based supervisory control synthesis 
 of discrete-event systems. 
+
+Update:
+Bug fixed!
 
 Required tools:
  1. cmake (See here: https://cmake.org/download/)
