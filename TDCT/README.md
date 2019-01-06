@@ -1,5 +1,5 @@
 # TDCT: TREE_DES_COMPUTATION_TOOL
-This is a demo of TreeDES software version 1.0. This is an educational 
+This is a demo of Tree-DES software version 1.0. This is an educational 
 computation tool for efficient state-based supervisory control synthesis 
 of discrete-event systems. 
 
