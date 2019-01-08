@@ -4,7 +4,7 @@ computation tool for efficient state-based supervisory control synthesis
 of discrete-event systems. 
 
 Update:
-Bug fixed!
+Bug fixed.
 
 Required tools:
  1. cmake (See here: https://cmake.org/download/)
