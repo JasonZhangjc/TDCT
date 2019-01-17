@@ -12,6 +12,8 @@ Required tools:
  
  To build the project:
  1. Go to build directory.
- 2. Run ./build.sh inputDirectory rootFileName
+ 2. Run ./build.sh inputDirectory rootFileName.
+ 3. Then a new folder "results" will be created under the inputDirectory.
+ 4. In the folder "results": output.txt contains the open-loop simulation and the closed-loop simulation, controlled_behavior.txt contains the BDD Of the supervisory controller using the set notation, other .txt files are control functions of controllable events.
 
 A better version is under development.
