@@ -1,4 +1,5 @@
 #include <iostream>
+#include <chrono>
 #include "des.h"
 #include "event.h"
 #include "transition.h"
@@ -6,6 +7,7 @@
 #include "tds.h"
 
 using namespace std;
+using namespace std::chrono;
 
 
 int main(int argc, char *argv[]){
@@ -32,7 +34,13 @@ int main(int argc, char *argv[]){
     temp.run();
     
       // run the supervisory control synthesis
+    auto t1 = high_resolution_clock::now();
     temp.supcon(file_path);
+    auto t2 = high_resolution_clock::now();
+    cout << endl;
+    cout << "Supervisory control synthesis took: " <<
+                duration_cast<milliseconds>(t2 - t1).count() << " ms!" << endl << endl;
+    
     temp.runUnderControl();
     temp.printControlData(file_path);
     
